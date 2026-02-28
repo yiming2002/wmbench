@@ -5,6 +5,48 @@ build/
 dist/
 wheels/
 *.egg-info
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Notebook / experiment artifacts
+.ipynb_checkpoints/
+
+# Logs and runtime temp files
+*.log
+logs/
+tmp/
+temp/
+
+# Local environment & secrets
+.env
+.env.*
+!.env.example
 
 # Virtual environments
-.venv
+.venv/
+venv/
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model / training artifacts (keep code, ignore heavy binaries)
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+checkpoints/
+runs/
+wandb/
+
+# Hugging Face local cache (if created inside repo)
+.cache/
+huggingface/
